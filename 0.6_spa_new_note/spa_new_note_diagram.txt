@@ -1,0 +1,20 @@
+title 0.6: Spa New note (Mauy)
+
+note over Browser:
+Javascript code in the page starts
+loading the new notes whitout reloading
+all the content of the page. It does 
+this by using one array with the
+new notes and a function that renders those
+notes in the page.
+end note
+
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over Browser:
+This POST request contains the content 
+and date of the note. The Content-Type 
+header specifies the format of the data.
+end note
+
+Server-->Browser: HTTP Status code 201

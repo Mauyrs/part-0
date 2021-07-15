@@ -1,0 +1,36 @@
+title 0.4: new note (Mauy)
+
+Browser->Server: HTTP POST: https://studies.cs.helsinki.fi/exampleapp/new_note
+note over Browser:
+The server side code starts a POST request and adds 
+the content and date of the note to the JSON file.
+end note
+Server-->Browser: HTTP status code 302.
+
+note over Browser:
+This status code (302) ask the browser
+to do a new HTTP GET request at the
+address of the header's "location".
+end note
+
+Browser->Server: HTTP GET: https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: Page's HTML code.
+
+note over Browser: 
+The HTML code request the CSS through a <link> tag.
+end note
+
+Browser->Server: HTTP GET: https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: Page's CSS code.
+
+note over Browser: 
+The HTML code request the Javascript code.
+end note
+
+Browser->Server: HTTP GET: https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: Page's Javascript code.
+
+note over Browser: 
+The JS code starts running through the browser 
+and request the JSON file with the notes.
+end note
